@@ -14,7 +14,6 @@ class User
 
     public $id;
     public $name;
-    public $marks;
     public $email;
     public $age;
 
@@ -34,7 +33,9 @@ class UserController extends AbstractController
     {
 
         $student = new User('john_doe', 'john.doe@example.com', 21);
-        $students[] = $student;
+        $student1 = new User('Adadie', 'adadie@example.com', 67);
+        $student2 = new User('Chris', 'chris@example.com', 13);
+        $students = [$student, $student1, $student2];
 
         return $this->render('index.html.twig', ['students' => $students]);
         // return $this->json([
