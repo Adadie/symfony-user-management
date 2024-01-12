@@ -6,7 +6,7 @@ use stdClass;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Annotation\Route; 
 
 class User
 {
@@ -22,7 +22,7 @@ class User
         self::$lastId++;
         $this->id = self::$lastId;
         $this->name = $name;
-        $this->email = $email;
+        $this->email = $email;  
         $this->age = $age;
     }
 }

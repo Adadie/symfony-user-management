@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind base;
+
+@tailwind components;
+
+body {
+    background-color: lightgray;
+}
+
+h1{
+    color: red;
+}
