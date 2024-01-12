@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-	<h1>Users</h1>
+	<h1 class='bg-red-900'>Users</h1>
 	<table>
 		<tr>
 			<th>
@@ -15,13 +15,20 @@
 				Name
 			</th>
 			<th>
+				Email
+			</th>
+			<th>
 				Age
 			</th>
 		</tr>
-		<tr>
-			<td>{{id}}</td>
-			<td>{{name}}</td>
-			<td>{{age}}</td>
-		</tr>
+		{% for student in students %}
+
+			<tr>
+				<td>{{student.id}}</td>
+				<td>{{student.name}}</td>
+				<td>{{student.email}}</td>
+				<td>{{student.age}}</td>
+			</tr>
+		{% endfor %}
 	</table>
 {% endblock %}
